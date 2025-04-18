@@ -1,5 +1,5 @@
 Flask==2.3.2
 Flask-Cors==3.0.10
-PyMuPDF==1.25.5
+fitz==0.0.1
 python-dotenv==1.0.0
 gunicorn==21.2.0

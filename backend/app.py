@@ -4,8 +4,9 @@ import fitz  # PyMuPDF
 from resume_analyzer import analyze_resume
 import os
 
+
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/analyze": {"origins": ["https://resume-analyzer-tool.vercel.app/"]}})
 
 UPLOAD_FOLDER = 'uploads'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
