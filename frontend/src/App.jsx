@@ -43,7 +43,7 @@ function App() {
     formData.append('file', file);
 
     try {
-      const response = await axios.post('https://resume-analyzer-tool-backend.onrender.com', formData, {
+      const response = await axios.post('https://resume-analyzer-tool-backend.onrender.com/analyze', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
